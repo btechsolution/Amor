@@ -1,15 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
 
-@-webkit-keyframes throb{
-  0%{
+@-webkit-keyframes throb {
+  0% {
     -webkit-transform: scale(1);
   }
-  35%{
+  35% {
     -webkit-transform: scale(1.2);
   }
-  85%{
+  85% {
     -webkit-transform: scale(1);
-  }   
+  }
 }
 
 html {
@@ -22,7 +22,7 @@ html {
 body {
   display: table-cell;
   vertical-align: middle;
-  font-family: 'Shadows Into Light';
+  font-family: 'Shadows Into Light', sans-serif;
   color: #111;
 }
 
@@ -37,14 +37,15 @@ div.throb {
   -webkit-animation: throb 0.5s infinite;
   animation: throb 0.5s infinite;
   animation-delay: 0.8s;
-
 }
+
 input[type="checkbox"] {
   display: none;
 }
 
 input[type="checkbox"] + label {
-  width: 30vmin; height: 30vmin;
+  width: 30vmin;
+  height: 30vmin;
   line-height: 30vmin;
   display: inline-block;
   position: absolute;
@@ -54,12 +55,13 @@ input[type="checkbox"] + label {
 }
 
 label {
-  text-shadow: 3vmin 3vmin 10vmin rgba(0,0,0,0.5);
+  text-shadow: 3vmin 3vmin 10vmin rgba(0, 0, 0, 0.5);
 }
-  label:hover {
-    color: #c32a2a;
-    cursor: pointer;
-  }
+
+label:hover {
+  color: #c32a2a;
+  cursor: pointer;
+}
 
 #ck1 + label,
 #ck2 + label {
@@ -85,7 +87,8 @@ label {
 
 #ck1:checked + label,
 #ck2:checked + label {
-  width: 54vmin; height: 54vmin;
+  width: 54vmin;
+  height: 54vmin;
   border-radius: 50%;
   line-height: 54vmin;
 }
@@ -95,14 +98,17 @@ label {
 }
 
 #ck3 + label {
-  bottom: 5vmin; left: 50%;
+  bottom: 5vmin;
+  left: 50%;
   margin: 0 -9vmin;
   background-color: white;
 }
 
 #ck3:checked + label {
-  width: 49.5vmin; height: 49.5vmin;
-  bottom: 17.28vmin; left: 29.16vmin;
+  width: 49.5vmin;
+  height: 49.5vmin;
+  bottom: 17.28vmin;
+  left: 29.16vmin;
   transform: rotate(45deg);
   line-height: 4.86vmin;
 }
@@ -111,7 +117,8 @@ span {
   display: inline-block;
   text-align: left;
   position: absolute;
-  bottom: 0vmin; left: 0vmin;
+  bottom: 0vmin;
+  left: 0vmin;
   margin-bottom: -3vmin;
   font-size: 6vmin;
   color: red;
